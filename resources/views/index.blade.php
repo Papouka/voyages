@@ -79,7 +79,7 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="active"><a class="smoth-scroll" href="#home">Acceuil <div class="ripple-wrapper"></div></a>
                                         </li>
-                                        <li><a class="smoth-scroll" href="#place">Places</a>
+                                        <li><a class="smoth-scroll" href="#place">notre agence</a>
                                         </li>
                                         <li><a class="smoth-scroll" href="#About">A propos </a>
                                         </li>
@@ -134,15 +134,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="contact-form">
-                    <form id="contact-form" method="POST" action="/api/index">
-                        
+                    <form id="contact-form" method="POST" action="reservation1">
     @csrf
     <div class="row">
         <div class="form-group col-md-12">
-            <input type="text" name="nom" class="form-control" id="first-name" placeholder="Enter Name" required="required">
+            <input type="text" name="nom" class="form-control" id="first-name" placeholder="Enter Name" required>
         </div>
         <div class="form-group col-md-12">
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required="required">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
         </div>
         <div class="form-group col-md-12">
             <select name="destination" class="form-control" id="person" required>
@@ -155,16 +154,17 @@
             </select>
         </div>
         <div class="form-group col-md-12">
-            <input type="date" name="date_depart" class="form-control" placeholder="Entrer votre date" required="required">
+            <input type="date" name="date_depart" class="form-control" placeholder="Entrer votre date" required>
         </div>
         <div class="form-group col-md-12">
-            <input type="number" name="nombre_billets" class="form-control" placeholder="Entrer un nombre" required="required">
+            <input type="text" name="nombre_billets" class="form-control" placeholder="Entrer un nombre" required>
         </div>
         <div class="form-group col-md-12">
-            <button type="submit">Réserver</button>
+            <button type="submit" class="btn btn-primary"><a href="ReservationsController">reservations</a></button>
         </div>
     </div>
 </form>
+
 
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        Istanbul, Turkey
+                                        
                                     </h2>
                                 </div>
                             </div>
@@ -385,7 +385,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        Longs Peak, the USA
+                                       
                                     </h2>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        London, Great Britain
+                                       
                                     </h2>
                                 </div>
                             </div>
@@ -417,7 +417,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        Swiss Alps, Switzerland
+                                        
                                     </h2>
                                 </div>
                             </div>
@@ -433,7 +433,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        Istanbul, Turkey
+                                       
                                     </h2>
                                 </div>
                             </div>
@@ -449,7 +449,7 @@
                             <div class="project-overlay">
                                 <div class="project-info">
                                     <h2 class="wow fadeInUp">
-                                        Longs Peak, the USA
+                                        
                                     </h2>
                                 </div>
                             </div>
@@ -484,8 +484,8 @@
                                 <p>Nunc eu neque in nisl aliquet blandit. Donec sodales velit at auctor mollis. Sed vitae placerat risus. Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
                             </div>
                             <div class="testi-name">
-                                <h2>Jhonathon doe</h2>
-                                <h3>Businees men</h3>
+                                <h2>PAPOUKA Lory</h2>
+                                <h3>Businees women</h3>
                             </div>
                         </div>
                         <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
@@ -495,7 +495,7 @@
                                 <p>Nunc eu neque in nisl aliquet blandit. Donec sodales velit at auctor mollis. Sed vitae placerat risus. Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
                             </div>
                             <div class="testi-name">
-                                <h2>katrina kaif</h2>
+                                <h2>BITOM Richellot</h2>
                                 <h3>actress</h3>
                             </div>
                         </div>
@@ -506,7 +506,7 @@
                                 <p>Nunc eu neque in nisl aliquet blandit. Donec sodales velit at auctor mollis. Sed vitae placerat risus. Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
                             </div>
                             <div class="testi-name">
-                                <h2>Jhonathon doe</h2>
+                                <h2>BISSEKI Moise</h2>
                                 <h3>Businees men</h3>
                             </div>
                         </div>
@@ -517,7 +517,7 @@
                                 <p>Nunc eu neque in nisl aliquet blandit. Donec sodales velit at auctor mollis. Sed vitae placerat risus. Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
                             </div>
                             <div class="testi-name">
-                                <h2>Jhonathon doe</h2>
+                                <h2>SINGUI Brice</h2>
                                 <h3>Businees men</h3>
                             </div>
                         </div>
@@ -547,7 +547,7 @@
                             <img src="assets/images/team/team1.jpg" class="img-responsive">
                         </div>
                         <div class="team-description">
-                            <h4>jonathon doe</h4>
+                            <h4>FOTSO</h4>
                             <h5>Taxi driver & traveler</h5>
                             <p>I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
                         </div>
@@ -561,7 +561,7 @@
                             <img src="#" class="img-responsive">
                         </div>
                         <div class="team-description">
-                            <h4>Jessica jui</h4>
+                            <h4>NNAMA</h4>
                             <h5>Taxi driver & traveler</h5>
                             <p>I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
                         </div>
@@ -575,7 +575,7 @@
                             <img src="#" class="img-responsive">
                         </div>
                         <div class="team-description">
-                            <h4>Monalisa lui</h4>
+                            <h4>FOFOU</h4>
                             <h5>Taxi driver & traveler</h5>
                             <p>I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
                         </div>
